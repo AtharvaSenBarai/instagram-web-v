@@ -1,6 +1,6 @@
-export const apiKey = 'AIzaSyB2PEn_2YIGYUSP99Ru7iclENiE4FLuo8A';
-export const authDomain = 'instagram-53a21.firebaseapp.com';
-export const projectId = 'instagram-53a21';
-export const storageBucket = 'instagram-53a21.appspot.com';
-export const messagingSenderId = '987962045619';
-export const appId = '1:987962045619:web:b99d490ef17e9b26846cc6';
+export const apiKey = 'AIzaSyCBqrSnLitkvWt7RKKck1DZLqYKGnCzJv8';
+export const authDomain = 'bing-bang123456.firebaseapp.com';
+export const projectId = 'bing-bang123456';
+export const storageBucket = 'bing-bang123456.appspot.com';
+export const messagingSenderId = '556634595027';
+export const appId = '1:556634595027:web:49552ff1555d3b18057e26';
