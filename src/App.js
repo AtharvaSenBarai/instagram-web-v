@@ -5,6 +5,7 @@ import { UserContext } from './context/context';
 import ProtectedRoute from './helpers/ProtectedRoute';
 import useAuthListener from './hooks/useAuthListener';
 import ChatBoard from './pages/ChatBoard';
+import Following from './pages/Following';
 import Dashboard from './pages/Dashboard';
 import EditProfile from './pages/EditProfile';
 import Explore from './pages/Explore';
@@ -29,6 +30,9 @@ function App() {
                         <Route path="/notfound" component={NotFound} />
                         <ProtectedRoute loggedInUser={loggedInUser} path="/edit">
                             <Route component={EditProfile} />
+                        </ProtectedRoute>
+                        <ProtectedRoute loggedInUser={loggedInUser} path="/following">
+                            <Route component={Following} />
                         </ProtectedRoute>
                         <ProtectedRoute loggedInUser={loggedInUser} path="/chat">
                             <Route component={ChatBoard} />
