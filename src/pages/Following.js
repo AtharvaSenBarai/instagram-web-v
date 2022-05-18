@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 
-const NotFound = () => (
+const Following = () => (
     <div>
         <Helmet>
             <title>Detagram | Following</title>
@@ -25,4 +25,4 @@ const NotFound = () => (
     </div>
 );
 
-export default NotFound
+export default Following
