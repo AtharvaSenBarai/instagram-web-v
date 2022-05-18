@@ -6,7 +6,7 @@ import Header from '../components/Header';
 const Dashboard = () => (
     <div>
         <Helmet>
-            <title>Instagram | Dashboard</title>
+            <title>Detagram | Home</title>
         </Helmet>
         <div className="h-screen overflow-auto">
             <Header />
