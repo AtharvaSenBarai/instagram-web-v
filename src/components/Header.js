@@ -58,7 +58,6 @@ const Header = () => {
                             {pathname === '/chat' ? SvgIcons.messageFill : SvgIcons.messageOutline}
                         </Link>
                     </div>
-                    <div>{SvgIcons.heartOutline}</div>
                     <div>
                         <FiLogOut className="cursor-pointer" size={22} onClick={logoutHandler} />
                     </div>
