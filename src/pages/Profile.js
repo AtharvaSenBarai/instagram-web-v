@@ -24,7 +24,7 @@ const Profile = () => {
     return (
         <div>
             <Helmet>
-                <title>Instagram | Profile</title>
+                <title>Detagram | Profile</title>
             </Helmet>
             <div className="h-screen overflow-auto">
                 <Header />
