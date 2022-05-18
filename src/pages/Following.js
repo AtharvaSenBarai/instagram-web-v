@@ -1,12 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import Header from '../components/Header';
-import { motion } from 'framer-motion';
-import React, { useContext, useState } from 'react';
-import { FiEdit } from 'react-icons/fi';
-import Skeleton from 'react-loading-skeleton';
-import { Link } from 'react-router-dom';
 import { UserContext } from '../../context/context';
 import useUser from '../../hooks/useUser';
 import {
