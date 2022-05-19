@@ -101,10 +101,8 @@ const ProfileHeader = ({ user, totalPost }) => {
                         <p>Followers</p>
                     </div>
                     <div>
-<Link to="/following">
                         <p className="font-bold">{following.length}</p>
                         <p>Following</p>
-</Link>
                     </div>
                 </div>
             </div>
