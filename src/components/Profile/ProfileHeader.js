@@ -93,15 +93,15 @@ const ProfileHeader = ({ user, totalPost }) => {
                 </div>
                 <div className="flex justify-between px-12 mt-12 border border-gray-border py-2 text-center text-sm text-gray-base md:hidden">
                     <div className="text-center">
-                        <p className="font-bold">{totalPost}</p>
+                        <h2 class="title-2">{totalPost}</h2>
                         <p>Post</p>
                     </div>
                     <div>
-                        <p className="font-bold">{totalFollowers}</p>
+                        <h2 class="title-2">{totalFollowers}</h2>
                         <p>Followers</p>
                     </div>
                     <div>
-                        <p className="font-bold">{following.length}</p>
+                        <h2 class="title-2">{following.length}</h2>
                         <p>Following</p>
                     </div>
                 </div>
