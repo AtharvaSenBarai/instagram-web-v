@@ -1,0 +1,26 @@
+body{
+  background-color:#31394D;
+}
+.color-card{
+  background:#31394D;
+}
+
+.color-card-2{
+  background:#FDFEFF;
+}
+.title{
+  color:#ffffff;
+  font-family: roboto;
+  weight:300;
+}
+.title-2{
+  color:#2D354A;
+  font-family: roboto;
+  weight:300;
+}
+.followers{
+  color:#666B7D;
+  font-family:10px;
+  margin-top:10px;
+  font-family: roboto;
+  weight:100;
