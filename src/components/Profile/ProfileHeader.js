@@ -1,3 +1,5 @@
+import React from 'react';
+import '../App.css';
 import { motion } from 'framer-motion';
 import React, { useContext, useState } from 'react';
 import { FiEdit } from 'react-icons/fi';
