@@ -82,7 +82,7 @@ const ProfileHeader = ({ user, totalPost }) => {
                                 <span className="font-bold">{totalFollowers}</span> Followers
                             </h1>
                             <h1>
-                                <span className="font-bold" src="/following">{following.length}</span> Following
+                                <span className="font-bold">{following.length}</span> Following
                             </h1>
                         </div>
                         <div className="hidden md:block">
@@ -101,8 +101,10 @@ const ProfileHeader = ({ user, totalPost }) => {
                         <p>Followers</p>
                     </div>
                     <div>
-                        <p className="font-bold" src="/following">{following.length}</p>
+<Link to="/following">
+                        <p className="font-bold">{following.length}</p>
                         <p>Following</p>
+</Link>
                     </div>
                 </div>
             </div>
