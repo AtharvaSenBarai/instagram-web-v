@@ -98,7 +98,7 @@ const ProfileHeader = ({ user, totalPost }) => {
             <p className="followers">Posts</p>
           </div>
                               <div className="grid-2">
-            <button classNy="color-d circule"><i className="fab fa-github-alt fa-2x"></i></button>
+            <button className="color-d circule"><i className="fab fa-github-alt fa-2x"></i></button>
             <h2 className="title-2">{totalFollowers}</h2>
             <p className="followers">Followers</p>
           </div>
