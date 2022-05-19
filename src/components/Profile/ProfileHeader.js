@@ -86,25 +86,33 @@ const ProfileHeader = ({ user, totalPost }) => {
                                 <span className="font-bold">{following.length}</span> Following
                             </h1>
                         </div>
-                        <div className="hidden md:block">
-                            <h1 className="font-bold">{displayName}</h1>
-                            <h1>{email}</h1>
+                        <div>
+                            <p class="job-title">{displayName}</p>
+                            <div class="desc top">
+        <p>{email}</p>
+      </div>
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-between px-12 mt-12 border border-gray-border py-2 text-center text-sm text-gray-base md:hidden">
-                    <div className="text-center">
-                        <p className="font-bold">{totalPost}</p>
-                        <p>Post</p>
-                    </div>
-                    <div>
-                        <p className="font-bold">{totalFollowers}</p>
-                        <p>Followers</p>
-                    </div>
-                    <div>
-                        <p className="font-bold">{following.length}</p>
-                        <p>Following</p>
-                    </div>
+                <div class="container">
+        <div class="content">
+          <div class="grid-2">
+            <button class="color-b circule"> <i class="fab fa-dribbble fa-2x"></i></button>
+            <h2 class="title-2">{totalPost}</h2>
+            <p class="followers">Post</p>
+          </div>
+          <div class="grid-2">
+            <button class="color-c circule"><i class="fab fa-behance fa-2x"></i></button>
+            <h2 class="title-2">{totalFollowers}</h2>
+            <p class="followers">Followers</p>
+          </div>
+          <div class="grid-2">
+            <button class="color-d circule"><i class="fab fa-github-alt fa-2x"></i></button>
+            <h2 class="title-2">{following.length}</h2>
+            <p class="followers">Following</p>
+          </div>
+        </div>
+      </div>
                 </div>
             </div>
             {isMyProfile && (
