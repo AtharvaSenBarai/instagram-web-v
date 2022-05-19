@@ -92,18 +92,21 @@ const ProfileHeader = ({ user, totalPost }) => {
                     </div>
                 </div>
                 <div className="flex justify-between px-12 mt-12 border border-gray-border py-2 text-center text-sm text-gray-base md:hidden">
-                    <div className="text-center">
-                        <h2 className="title-2">{totalPost}</h2>
-                        <p>Post</p>
-                    </div>
-                    <div>
-                        <h2 className="title-2">{totalFollowers}</h2>
-                        <p>Followers</p>
-                    </div>
-                    <div>
-                        <h2 className="title-2">{following.length}</h2>
-                        <p>Following</p>
-                    </div>
+                              <div className="grid-2">
+            <button className="color-d circule"><i className="fab fa-github-alt fa-2x"></i></button>
+            <h2 className="title-2">{totalPost}</h2>
+            <p className="followers">Posts</p>
+          </div>
+                              <div className="grid-2">
+            <button classNy="color-d circule"><i className="fab fa-github-alt fa-2x"></i></button>
+            <h2 className="title-2">{totalFollowers}</h2>
+            <p className="followers">Followers</p>
+          </div>
+                              <div className="grid-2">
+            <button className="color-d circule"><i className="fab fa-github-alt fa-2x"></i></button>
+            <h2 className="title-2">{following.length}</h2>
+            <p className="followers">Following</p>
+          </div>
                 </div>
             </div>
             {isMyProfile && (
