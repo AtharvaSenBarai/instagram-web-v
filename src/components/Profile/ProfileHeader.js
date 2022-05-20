@@ -39,13 +39,13 @@ const ProfileHeader = ({ user, totalPost }) => {
                             alt="profile"
                         />
                         <div className="mt-4 md:hidden text-center ml-2 sm:ml-0">
-                            <h1 className="color:#2D354A; font-family: roboto; weight:300; ">{displayName}</h1>
-                            <h1 className=" font-size:12px; margin-left: 65px; margin-right: 65px; color:#B7B8C0; text-align:center; ">{email}</h1>
+                            <h1 className="color:#2D354A; font-family: roboto; weight:300">{displayName}</h1>
+                            <h1 className=" font-size:12px; margin-left: 65px; margin-right: 65px; color:#B7B8C0; text-align:center">{email}</h1>
                         </div>
                     </div>
                     <div className="w-8/12 lg:w-9/12">
                         <div className="md:flex md:items-center space-y-4 md:space-y-0 md:space-x-4">
-                            <h1 className=" color:#2D354A; font-family: roboto; weight:300; ">{username}</h1>
+                            <h1 className=" color:#2D354A; font-family: roboto; weight:300">{username}</h1>
 
                             {!authUser.following && !isMyProfile ? (
                                 <Skeleton count={1} height={30} width={100} />
