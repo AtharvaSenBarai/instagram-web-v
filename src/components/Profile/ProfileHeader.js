@@ -105,12 +105,7 @@ const ProfileHeader = ({ user, totalPost }) => {
             <h2 className="title-2">{following.length}</h2>
             <p className="followers">Following</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-                </div>
-            </div>
+     
             {isMyProfile && (
                 <motion.button
                     onClick={() => setIsModal(true)}
