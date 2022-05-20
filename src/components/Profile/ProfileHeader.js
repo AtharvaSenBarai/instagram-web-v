@@ -55,7 +55,7 @@ const ProfileHeader = ({ user, totalPost }) => {
                                     className={`py-1 px-8  rounded text-sm font-medium  shadow w-full md:w-max ${
                                         isFollowingUser
                                             ? 'bg-gray-border text-gray-base'
-                                            : 'bg-blue text-white'
+                                            : 'bg-green text-white'
                                     }`}
                                     onClick={handleFollowUser}
                                 >
@@ -74,38 +74,38 @@ const ProfileHeader = ({ user, totalPost }) => {
                                 </Link>
                             ) : null}
                         </div>
-                        <div className="grid-7 element-animation">
-    <div className="card color-card-2">
-      <ul>
-        <li><i className="fas fa-arrow-left i-l b"></i></li>
-        <li><i className="fas fa-ellipsis-v i-r b"></i></li>
-        <li><i className="far fa-heart i-r b"></i></li>
-      </ul>
-      <img src={photo || './images/avatars/placeholder.png'} alt="profile-pic" className="profile"></img>
-      <h1 className="title-2">{username}</h1>
-      <p className="job-title">{displayName}</p>
-      <div className="desc top">
-        <p>{email}</p>
-      </div>
-      <hr className="hr-2"></hr>
-      <div className="container">
-        <div className="content">
-          <div className="grid-2">
-            <button className="color-b circule"> <i className="fab fa-dribbble fa-2x"></i></button>
-            <h2 className="title-2">{totalPost}</h2>
-            <p className="followers">Post</p>
-          </div>
-          <div className="grid-2">
-            <button className="color-c circule"><i className="fab fa-behance fa-2x"></i></button>
-            <h2 className="title-2">{totalFollowers}</h2>
-            <p className="followers">Followers</p>
-          </div>
-          <div className="grid-2">
-            <button className="color-d circule"><i className="fab fa-github-alt fa-2x"></i></button>
-            <h2 className="title-2">{following.length}</h2>
-            <p className="followers">Following</p>
-          </div>
-     
+                        <div className="hidden w-6/12 md:flex justify-between my-3">
+                            <h1>
+                                <span className="font-bold">{totalPost}</span> Post
+                            </h1>
+                            <h1>
+                                <span className="font-bold">{totalFollowers}</span> Followers
+                            </h1>
+                            <h1>
+                                <span className="font-bold">{following.length}</span> Following
+                            </h1>
+                        </div>
+                        <div className="hidden md:block">
+                            <h1 className="font-bold">{displayName}</h1>
+                            <h1>{email}</h1>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex justify-between px-12 mt-12 border border-gray-border py-2 text-center text-sm text-gray-base md:hidden">
+                    <div className="text-center">
+                        <p className="font-bold">{totalPost}</p>
+                        <p>Post</p>
+                    </div>
+                    <div>
+                        <p className="font-bold">{totalFollowers}</p>
+                        <p>Followers</p>
+                    </div>
+                    <div>
+                        <p className="font-bold">{following.length}</p>
+                        <p>Following</p>
+                    </div>
+                </div>
+            </div>
             {isMyProfile && (
                 <motion.button
                     onClick={() => setIsModal(true)}
@@ -118,5 +118,9 @@ const ProfileHeader = ({ user, totalPost }) => {
                     <FiEdit />
                 </motion.button>
             )}
-           
+            {isModal && <Modal user={user} setIsModal={setIsModal} />}
+        </div>
+    );
+};
+
 export default ProfileHeader;
