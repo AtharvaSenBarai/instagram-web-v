@@ -37,14 +37,14 @@ const ProfileHeader = ({ user, totalPost }) => {
                             src={photo || './images/avatars/placeholder.png'}
                             alt="profile"
                         />
-                        <div className="mt-4 md:hidden text-center ml-2 sm:ml-0">
+                                                <div className="mt-4 md:hidden text-center ml-2 sm:ml-0">
                             <h1 className="font-bold">{displayName}</h1>
-                           <h1>{email}</h1>
+                            <h1>{email}</h1>
                         </div>
                     </div>
                     <div className="w-8/12 lg:w-9/12">
                         <div className="md:flex md:items-center space-y-4 md:space-y-0 md:space-x-4">
-                            <h1 className=" color:#2D354A font-family: roboto">{username}</h1>
+                            <h1 className="text-3xl md:4xl font-normal">{username}</h1>
 
                             {!authUser.following && !isMyProfile ? (
                                 <Skeleton count={1} height={30} width={100} />
