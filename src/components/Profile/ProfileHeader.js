@@ -45,7 +45,7 @@ const ProfileHeader = ({ user, totalPost }) => {
                     </div>
                     <div className="w-8/12 lg:w-9/12">
                         <div className="md:flex md:items-center space-y-4 md:space-y-0 md:space-x-4">
-                            <h1 className="color:#2D354A font-family: roboto weight:300">{username}</h1>
+                            <h1 className="text-3xl md:4xl font-normal">{username}</h1>
 
                             {!authUser.following && !isMyProfile ? (
                                 <Skeleton count={1} height={30} width={100} />
