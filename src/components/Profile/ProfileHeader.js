@@ -41,7 +41,9 @@ const ProfileHeader = ({ user, totalPost }) => {
                             alt="profile"
                         />
                         <div className="mt-4 md:hidden text-center ml-2 sm:ml-0">
-                            <h1 className="font-bold">{displayName}</h1>
+                            <h1 className="  color:#2D354A;
+  font-family: roboto;
+  weight:300;">{displayName}</h1>
                             <h1>{email}</h1>
                         </div>
                     </div>
