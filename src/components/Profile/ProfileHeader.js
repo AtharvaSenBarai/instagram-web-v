@@ -45,7 +45,7 @@ const ProfileHeader = ({ user, totalPost }) => {
                     </div>
                     <div className="w-8/12 lg:w-9/12">
                         <div className="md:flex md:items-center space-y-4 md:space-y-0 md:space-x-4">
-                            <h1 className="text-3xl md:4xl font-normal">{username}</h1>
+                            <h1 className="color:#2D354A font-family: roboto weight:300">{username}</h1>
 
                             {!authUser.following && !isMyProfile ? (
                                 <Skeleton count={1} height={30} width={100} />
@@ -93,18 +93,17 @@ const ProfileHeader = ({ user, totalPost }) => {
                 </div>
                 <div className="flex justify-between px-12 mt-12 border border-gray-border py-2 text-center text-sm text-gray-base md:hidden">
                     <div className="text-center">
-                        <p className="color:#2D354A font-family: roboto weight:300">{totalPost}</p>
+                        <p className="font-bold">{totalPost}</p>
                         <p>Post</p>
                     </div>
                     <div>
-                        <p className="color:#2D354A font-family: roboto weight:300">{totalFollowers}</p>
+                        <p className="font-bold">{totalFollowers}</p>
                         <p>Followers</p>
                     </div>
-                             <div class="{width: 100px;}">
-            <button class="background: linear-gradient(to bottom right, #6452E9, #639FF9);"><i class="fab fa-github-alt fa-2x"></i></button>
-            <h2 class="color:#2D354A; font-family: roboto; weight:300;">{following.length}</h2>
-            <p class="color:#666B7D; font-family:10px; margin-top:10px; font-family: roboto; weight:100;">Followers</p>
-          </div>
+                    <div>
+                        <p className="font-bold">{following.length}</p>
+                        <p>Following</p>
+                    </div>
                 </div>
             </div>
             {isMyProfile && (
