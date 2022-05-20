@@ -81,7 +81,7 @@ const ProfileHeader = ({ user, totalPost }) => {
         <li><i className="fas fa-ellipsis-v i-r b"></i></li>
         <li><i className="far fa-heart i-r b"></i></li>
       </ul>
-      <img src={photo || './images/avatars/placeholder.png'} alt="profile-pic" className="profile">
+      <img src={photo || './images/avatars/placeholder.png'} alt="profile-pic" className="profile"></img>
       <h1 className="title-2">{username}</h1>
       <p className="job-title">{displayName}</p>
       <div className="desc top">
