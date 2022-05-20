@@ -33,11 +33,12 @@ const ProfileHeader = ({ user, totalPost }) => {
                 <div className="flex md:items-center space-x-2 sm:space-x-12 pr-4 ">
                     <div className="w-4/12 lg:w-3/12 flex flex-col justify-center items-center sm:flex-none">
                         <img
-                            className="  border-radius:100% margin-top:60px width:132px height:128px"
+                            className="h-30 w-30 sm:h-36  sm:w-36 md:h-48 md:w-48 rounded-full
+						  ml-0 sm:ml-12 md:ml-12 lg:ml-16"
                             src={photo || './images/avatars/placeholder.png'}
                             alt="profile"
                         />
-                                                <div className="mt-4 md:hidden text-center ml-2 sm:ml-0">
+                        <div className="mt-4 md:hidden text-center ml-2 sm:ml-0">
                             <h1 className="font-bold">{displayName}</h1>
                             <h1>{email}</h1>
                         </div>
@@ -54,7 +55,7 @@ const ProfileHeader = ({ user, totalPost }) => {
                                     className={`py-1 px-8  rounded text-sm font-medium  shadow w-full md:w-max ${
                                         isFollowingUser
                                             ? 'bg-gray-border text-gray-base'
-                                            : 'bg-green text-white'
+                                            : 'bg-blue text-white'
                                     }`}
                                     onClick={handleFollowUser}
                                 >
@@ -92,15 +93,15 @@ const ProfileHeader = ({ user, totalPost }) => {
                 </div>
                 <div className="flex justify-between px-12 mt-12 border border-gray-border py-2 text-center text-sm text-gray-base md:hidden">
                     <div className="text-center">
-                        <p className="font-bold">{totalPost}</p>
+                        <p className="color:#2D354A font-family: roboto weight:300">{totalPost}</p>
                         <p>Post</p>
                     </div>
                     <div>
-                        <p className="font-bold">{totalFollowers}</p>
+                        <p className="color:#2D354A font-family: roboto weight:300">{totalFollowers}</p>
                         <p>Followers</p>
                     </div>
                     <div>
-                        <p className="font-bold">{following.length}</p>
+                        <p className="color:#2D354A font-family: roboto weight:300">{following.length}</p>
                         <p>Following</p>
                     </div>
                 </div>
