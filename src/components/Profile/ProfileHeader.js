@@ -118,9 +118,5 @@ const ProfileHeader = ({ user, totalPost }) => {
                     <FiEdit />
                 </motion.button>
             )}
-            {isModal && <Modal user={user} setIsModal={setIsModal} />}
-        </div>
-    );
-};
-
+           
 export default ProfileHeader;
