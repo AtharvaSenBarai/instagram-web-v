@@ -38,7 +38,7 @@ const ProfileHeader = ({ user, totalPost }) => {
                             src={photo || './images/avatars/placeholder.png'}
                             alt="profile"
                         />
-                        <div className="mt-4 md:hidden text-center ml-2 sm:ml-0">
+                        <div className="color:#2D354A; font-family: roboto; weight:300;">
                             <h1 className="font-bold">{displayName}</h1>
                             <h1>{email}</h1>
                         </div>
