@@ -100,10 +100,11 @@ const ProfileHeader = ({ user, totalPost }) => {
                         <p className="color:#2D354A font-family: roboto weight:300">{totalFollowers}</p>
                         <p>Followers</p>
                     </div>
-                    <div>
-                        <p className="color:#2D354A font-family: roboto weight:300">{following.length}</p>
-                        <p>Following</p>
-                    </div>
+                             <div class="{width: 100px;}">
+            <button class="background: linear-gradient(to bottom right, #6452E9, #639FF9);"><i class="fab fa-github-alt fa-2x"></i></button>
+            <h2 class="color:#2D354A; font-family: roboto; weight:300;">{following.length}</h2>
+            <p class="color:#666B7D; font-family:10px; margin-top:10px; font-family: roboto; weight:100;">Followers</p>
+          </div>
                 </div>
             </div>
             {isMyProfile && (
