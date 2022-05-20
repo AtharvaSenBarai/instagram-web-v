@@ -33,8 +33,10 @@ const ProfileHeader = ({ user, totalPost }) => {
                 <div className="flex md:items-center space-x-2 sm:space-x-12 pr-4 ">
                     <div className="w-4/12 lg:w-3/12 flex flex-col justify-center items-center sm:flex-none">
                         <img
-                            className="h-30 w-30 sm:h-36  sm:w-36 md:h-48 md:w-48 rounded-full
-						  ml-0 sm:ml-12 md:ml-12 lg:ml-16"
+                            className="  border-radius:100%;
+  margin-top:60px;
+  width:132px;
+  height:128px;"
                             src={photo || './images/avatars/placeholder.png'}
                             alt="profile"
                         />
