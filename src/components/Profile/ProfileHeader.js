@@ -28,28 +28,13 @@ const ProfileHeader = ({ user, totalPost }) => {
 
     const [isModal, setIsModal] = useState(false);
     return (
-        <div className="">
-            <div>
-                <div className="flex md:items-center space-x-2 sm:space-x-12 pr-4 ">
-                    <div className="w-4/12 lg:w-3/12 flex flex-col justify-center items-center sm:flex-none">
-                        <img
-                            className="  border-radius:100%;
-  margin-top:60px;
-  width:132px;
-  height:128px;"
-                            src={photo || './images/avatars/placeholder.png'}
-                            alt="profile"
-                        />
-                        <div className="mt-4 md:hidden text-center ml-2 sm:ml-0">
-                            <h1 className="color:#2D354A font-family: roboto; weight:300">{displayName}</h1>
-                            <h1>{email}</h1>
-                        </div>
-                    </div>
-                    <div className="w-8/12 lg:w-9/12">
-                        <div className="md:flex md:items-center space-y-4 md:space-y-0 md:space-x-4">
-                            <h1 className="text-3xl md:4xl font-normal">{username}</h1>
+<div class="grid-7 element-animation">
+    <div class="card color-card-2">
 
-                            {!authUser.following && !isMyProfile ? (
+      <img src="{photo || './images/avatars/placeholder.png'}" alt="profile-pic" class="profile">
+<div>
+      <h1 class="title-2">{username}</h1>
+  {!authUser.following && !isMyProfile ? (
                                 <Skeleton count={1} height={30} width={100} />
                             ) : authUser.following && !isMyProfile ? (
                                 <button
@@ -75,40 +60,37 @@ const ProfileHeader = ({ user, totalPost }) => {
                                     </button>
                                 </Link>
                             ) : null}
-                        </div>
-                        <div className="hidden w-6/12 md:flex justify-between my-3">
-                            <h1>
-                                <span className="font-bold">{totalPost}</span> Post
-                            </h1>
-                            <h1>
-                                <span className="font-bold">{totalFollowers}</span> Followers
-                            </h1>
-                            <h1>
-                                <span className="font-bold">{following.length}</span> Following
-                            </h1>
-                        </div>
-                        <div className="hidden md:block">
-                            <h1 className="font-bold">{displayName}</h1>
-                            <h1>{email}</h1>
-                        </div>
-                    </div>
-                </div>
-                <div className="flex justify-between px-12 mt-12 border border-gray-border py-2 text-center text-sm text-gray-base md:hidden">
-                    <div className="text-center">
-                        <p className="font-bold">{totalPost}</p>
-                        <p>Post</p>
-                    </div>
-                    <div>
-                        <p className="font-bold">{totalFollowers}</p>
-                        <p>Followers</p>
-                    </div>
-                    <div>
-                        <p className="font-bold">{following.length}</p>
-                        <p>Following</p>
-                    </div>
-                </div>
-            </div>
-            {isMyProfile && (
+</div>
+      <p class="job-title">{displayName}</p>
+      <div class="desc top">
+        <p>{email}</p>
+      </div>
+      <button class="btn color-a top"> Hire me</button>
+
+      <hr class="hr-2">
+      <div class="container">
+        <div class="content">
+          <div class="grid-2">
+            <button class="color-b circule"> <i class="fab fa-dribbble fa-2x"></i></button>
+            <h2 class="title-2">{totalPost}</h2>
+            <p class="followers">Post</p>
+          </div>
+          <div class="grid-2">
+            <button class="color-c circule"><i class="fab fa-behance fa-2x"></i></button>
+            <h2 class="title-2">{totalFollowers}</h2>
+            <p class="followers">Followers</p>
+          </div>
+          <div class="grid-2">
+            <button class="color-d circule"><i class="fab fa-github-alt fa-2x"></i></button>
+            <h2 class="title-2">{following.length}</h2>
+            <p class="followers">Following</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ {isMyProfile && (
                 <motion.button
                     onClick={() => setIsModal(true)}
                     title="Create Post"
