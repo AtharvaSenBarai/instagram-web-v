@@ -87,7 +87,7 @@ const ProfileHeader = ({ user, totalPost }) => {
       <div className="desc top">
         <p>{email}</p>
       </div>
-      <hr className="hr-2">
+      <hr className="hr-2"></hr>
       <div className="container">
         <div className="content">
           <div className="grid-2">
