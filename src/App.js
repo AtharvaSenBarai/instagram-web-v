@@ -6,7 +6,6 @@ import ProtectedRoute from './helpers/ProtectedRoute';
 import useAuthListener from './hooks/useAuthListener';
 import ChatBoard from './pages/ChatBoard';
 import Following from './pages/Following';
-import Home from './pages/home';
 import Dashboard from './pages/Dashboard';
 import EditProfile from './pages/EditProfile';
 import Explore from './pages/Explore';
@@ -26,7 +25,6 @@ function App() {
                         <ProtectedRoute loggedInUser={loggedInUser} path="/" exact>
                             <Route component={Dashboard} />
                         </ProtectedRoute>
-<Route path="/home" component={Home} />
                         <Route path="/login" component={Login} />
                         <Route path="/registration" component={Registration} />
                         <Route path="/notfound" component={NotFound} />
