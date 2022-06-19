@@ -5,6 +5,7 @@ import Header from '../components/Header';
 
 const Home = () => (
 
+<div>
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -129,6 +130,7 @@ const Home = () => (
       <script src="https://mini-chess-database.netlify.app/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="https://mini-chess-database.netlify.app/assets/js/custom.js"></script>
 </body>
+</div>
 );
 
 export default Home;
