@@ -24,8 +24,7 @@ const Home = () => (
     <title>Mini Chess | Home</title>
 </head>
 
-<body>
-
+<div>
     <section id="intro" class="bg-light">
         <div class="container">
             <div class="heading-block">
@@ -108,7 +107,7 @@ const Home = () => (
             </div>
         </div>
     </section>
-
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -123,7 +122,6 @@ const Home = () => (
      <script src="https://mini-chess.netlify.app/js/menu.js"></script>
       <script src="https://mini-chess-database.netlify.app/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="https://mini-chess-database.netlify.app/assets/js/custom.js"></script>
-</body>
 </div>
 );
 
