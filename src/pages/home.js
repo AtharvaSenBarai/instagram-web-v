@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 
-const Following = () => (
+const Home = () => (
 
 <head>
     <!-- Required meta tags -->
@@ -129,7 +129,6 @@ const Following = () => (
       <script src="https://mini-chess-database.netlify.app/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="https://mini-chess-database.netlify.app/assets/js/custom.js"></script>
 </body>
-
 );
 
-export default Following;
+export default Home;
