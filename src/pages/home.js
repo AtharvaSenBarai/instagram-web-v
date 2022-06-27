@@ -2,113 +2,26 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
-const Home = () => (
-
-<div>
-<head>
-<link rel="stylesheet" href="https://mini-chess-database.netlify.app/assets/css/style.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-     <!-- Custom styles -->
-    <link rel="stylesheet" href="https://mini-chess.netlify.app/css/main.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,600" rel="stylesheet">
-
-    <!-- Ionic icons -->
-    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" />
-
-    <title>Mini Chess | Home</title>
-</head>
-
-<div>
-    <section id="intro" class="bg-light">
-        <div class="container">
-            <div class="heading-block">
-                <h1>Mini Chess</h1>
-                <p>Get Registered your team to our site and add your special tournament and shown in site.</p>
-                <div class="topmargin-lg">
-                    <a href="features" class="primary-btn"><i class="icon ion-md-play-circle"></i> View Features</a>
-                    <a href="#" class="secondary-btn"><i class="icon ion-md-appstore"></i> Register now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-dark">
-        <div class="container">
-            <div class="heading-block">
-                <h3 class="text-light">Get Registered Your Team To Our Site</h3>
-                <p class="text-light">Add Your Tournament And Team/Club Details and get shown.</p>
-            </div>
-            <div class="text-center topmargin-lg">
-                <img src="assets/images/iphone.png" class="img-fluid mobile-app" alt="iphone image by Zee Swift">
-            </div>
-            <div class="heading-block">
-                <h3 class="text-light topmargin-sm">Get Started Now</h3>
-                <div class="topmargin-sm">
-                    <a href="teams" class="primary-btn"><i class="icon ion-md-create"></i> Register Your Team</a>
-                    <a href="#" class="primary-btn"><i class="icon ion-md-add"></i> Add Tournament</a>
-                </div>
-                <small class="topmargin-sm text-light">Website/Amazon Firetv</small>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-light">
-        <div class="container">
-            <div class="heading-block">
-                <h3>Mini Chess </h3>
-                <p>Our Teams/Club are active on LiChess.Org And Chess.Com And Our Chess Bot Are Active on LiChess.Org
+const HomeSite = () => (
+    <div>
+        <Helmet>
+            <title>Detagram</title>
+        </Helmet>
+        <div className="h-screen overflow-auto">
+            <Header />
+            <div className="container mx-auto max-w-screen-lg bg-white mt-24 flex justify-center text-center">
+                <div className="w-w/6  sm:w-4/6 ">
+                    <h1 className="text-xl font-medium mb-2">Detagram</h1>
+                    <p>
+                        The page which you want to visit is not found....{' '}
+                        <Link className="pointer text-blue" to="/">
+                            Go Back to home
+                        </Link>
                     </p>
-            </div>
-            <div class="row topmargin-lg">
-                <div class="col-lg-4 col-md-6 offset-lg-2">
-                    <div class="pricing-box">
-                        <h4>Chess Bot</h4>
-                        <span>Only Available on LiChess.Org</span>
-                        <p class="text-muted">Chess Bot Details</p>
-                        <ul class="topmargin-sm">
-                            <li>Name- Learn_Your_Skill</li>
-                            <li>Name- L_Y_S_Entries</li>
-                            <li>Avilable only 12 Hours</li>
-                            <li>Accept only Standard challenges (Blitz, Bullet and Rapid)</li>
-                            <li>Only Available on LiChess.Org</li>
-                            <li class="not-included">CrazyHouse, Chess960, King Of The Hill, Three-check, AntiChess, Automic, Horde, Racing King</li>
-                            <li class="not-included">Avilable 24/7</li>
-                            <li class="not-included">Personal Chatting</li>
-                        </ul>
-                        <a href="https://lichess.org/@/Learn_Your_Skill" class="primary-btn topmargin-sm">Learn_Your_Skill</a>
-                        <a href="https://lichess.org/@/L_Y_S_Entries" class="secondary-btn topmargin-sm">L_Y_S_Entries</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-box">
-                        <h4>Chess Team</h4>
-                        <span>Our Chess Teams Avilable On Chess.Com And On LiChess.Org</span>
-                        <p class="text-muted">Free Entry To Our Team</p>
-                        <ul class="topmargin-sm">
-                            <li>Unlimited Chess Tournament</li>
-                            <li>Chess Simul</li>
-                            <li>Win Certificates</li>
-                            <li>Free For All To Join</li>
-                            <li>Avilable Only On Chess.Com And LiChess.Org</li>
-                            <li>Get Chance To Win Coupon Or Cash Prizes</li>
-                            <li>Member Badge On Our Site</li>
-                            <li>Chess is Free For All</li>
-                        </ul>
-                        <a href="https://lichess.org/team/mini-chess-official" class="secondary-btn topmargin-sm">LiChess.Org</a>
-                        <a href="chess.com" class="primary-btn topmargin-sm">Chess.Com</a>
-                    </div>
                 </div>
             </div>
         </div>
-    </section>
-</div>
-  </div>
+    </div>
 );
 
-export default Home;
+export default HomeSite;
