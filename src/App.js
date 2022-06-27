@@ -13,6 +13,7 @@ import Login from './pages/Login';
 import NotFound from './pages/NotFound';
 import Profile from './pages/Profile';
 import Registration from './pages/Registration';
+import HomeSite from './pages/Home';
 
 function App() {
     const { loggedInUser } = useAuthListener();
@@ -28,6 +29,7 @@ function App() {
                         <Route path="/login" component={Login} />
                         <Route path="/registration" component={Registration} />
                         <Route path="/notfound" component={NotFound} />
+<Route path="/home" component={HomeSite} />
                         <ProtectedRoute loggedInUser={loggedInUser} path="/edit">
                             <Route component={EditProfile} />
                         </ProtectedRoute>
